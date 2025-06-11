@@ -46,11 +46,10 @@ Voucher de 5 euros:
 Informações Importantes:
 Apenas Suporte Básico
 
-Notas Internas:</br>
-Nova Atualização de Maio de 2025</br>
-Mantido Versão 6.0.0</br>
-Avaliaremos se os seguintes bugs das versão beta e a de abril foram corrigidos pelo próprio desenvolvedor: 
-Erro de Conexão, Erro Mensagem Fora do Expediente, Nome dos dias no modal de filas (ok), não criar faturas (ok), não editar empresas (ok), importar contatos do telefone (nok), não enviar e-mail de recuperação de senha (não testado).
+⚠️ Notas Internas:</br>
+📅 Nova Atualização de Maio de 2025</br>
+🛠️ Mantido Versão 6.0.0</br>
+⚠️ Importar contatos do telefone (nok).
 
 📅 16/04/2025 – Versão 6.0.0
 
