@@ -447,7 +447,7 @@ export const getQuotedMessage = (msg: proto.IWebMessageInfo): any => {
     msg.message.listResponseMessage?.singleSelectReply?.selectedRowId ||
     msg?.message?.listResponseMessage?.singleSelectReply.selectedRowId ||
     msg.message.listResponseMessage?.contextInfo;
-  msg.message.senderKeyDistributionMessage;
+    msg.message.senderKeyDistributionMessage;
 
   // testar isso
 
