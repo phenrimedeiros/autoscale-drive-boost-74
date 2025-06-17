@@ -393,21 +393,6 @@ const TicketListItemCustom = ({ ticket }) => {
     }
   };
 
-  const handleAcceptTicket = async (id) => {
-    setLoading(true);
-    try {
-      await api.put(`/tickets/${id}`, {
-        status: "open",
-        userId: user?.id,
-      });
-      history.push(`/tickets/${ticket.uuid}`);
-    } catch (err) {
-      toastError(err);
-    } finally {
-      if (isMounted.current) setLoading(false);
-    }
-  };
-
   const handleTransferTicket = () => {
     setTransferTicketModalOpen(true);
   };
