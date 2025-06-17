@@ -361,7 +361,7 @@ const TicketListItemCustom = ({ ticket }) => {
     setTransferTicketModalOpen(false);
   };
 
-  const handleAcepptTicket = async (id) => {
+  const handleAcceptTicket = async (id) => {
     setLoading(true);
     try {
         await api.put(`/tickets/${id}`, {
