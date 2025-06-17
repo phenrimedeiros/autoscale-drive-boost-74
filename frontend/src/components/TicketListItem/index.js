@@ -115,7 +115,7 @@ const TicketListItem = ({ ticket }) => {
     };
   }, []);
 
-  const handleAcepptTicket = async (ticket) => {
+  const handleAcceptTicket = async (ticket) => {
     setLoading(true);
     try {
       await api.put(`/tickets/${ticket.id}`, {
@@ -241,7 +241,7 @@ const TicketListItem = ({ ticket }) => {
             className={classes.acceptButton}
             size="small"
             loading={loading}
-            onClick={(e) => handleAcepptTicket(ticket)}
+            onClick={(e) => handleAcceptTicket(ticket)}
           >
             {i18n.t("ticketsList.buttons.accept")}
           </ButtonWithSpinner>
