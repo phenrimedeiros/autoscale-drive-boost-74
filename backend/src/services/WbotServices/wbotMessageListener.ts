@@ -69,7 +69,6 @@ import { addMsgAckJob } from "./BullAckService";
 import { CreateOrUpdateBaileysChatService } from "../BaileysChatServices/CreateOrUpdateBaileysChatService";
 
 import ffmpegPath from 'ffmpeg-static';
-import { whMessages, whStatus } from "../../controllers/WebHookController";
 
 ffmpeg.setFfmpegPath(ffmpegPath);
 
