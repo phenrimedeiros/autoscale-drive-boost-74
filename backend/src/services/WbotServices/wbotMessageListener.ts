@@ -3,6 +3,7 @@ import { writeFile } from "fs";
 import { head, isNil } from "lodash";
 import path, { join } from "path";
 import { promisify } from "util";
+
 import { map_msg } from "../../utils/global";
 
 import {
@@ -69,7 +70,6 @@ import { addMsgAckJob } from "./BullAckService";
 import { CreateOrUpdateBaileysChatService } from "../BaileysChatServices/CreateOrUpdateBaileysChatService";
 
 import ffmpegPath from 'ffmpeg-static';
-
 ffmpeg.setFfmpegPath(ffmpegPath);
 
 const request = require("request");
@@ -2058,7 +2058,6 @@ const handleMessage = async (
       console.log(e);
     }
 
-
     // Atualiza o ticket se a ultima mensagem foi enviada por mim, para que possa ser finalizado.
     try {
       await ticket.update({
@@ -2074,7 +2073,7 @@ const handleMessage = async (
     } else {
       await verifyMessage(msg, ticket, contact);
     }
-
+    
     if (isGroup || contact.disableBot) {
       return;
     }
@@ -2500,11 +2499,11 @@ const filterMessages = (msg: WAMessage): boolean => {
 
   if (
     [
-    WAMessageStubType.REVOKE,
-    WAMessageStubType.E2E_DEVICE_CHANGED,
-    WAMessageStubType.E2E_IDENTITY_CHANGED,
-    WAMessageStubType.CIPHERTEXT
-  ].includes(msg.messageStubType as (typeof WAMessageStubType)[keyof typeof WAMessageStubType])
+      WAMessageStubType.REVOKE,
+      WAMessageStubType.E2E_DEVICE_CHANGED,
+      WAMessageStubType.E2E_IDENTITY_CHANGED,
+      WAMessageStubType.CIPHERTEXT
+    ].includes(msg.messageStubType)
   )
     return false;
 
