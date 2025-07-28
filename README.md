@@ -46,11 +46,6 @@ Voucher de 5 euros:
 Informações Importantes:
 Apenas Suporte Básico
 
-⚠️ Notas Internas:</br>
-📅 Nova Atualização de Maio de 2025</br>
-🛠️ Mantido Versão 6.0.0</br>
-⚠️ Importar contatos do telefone (nok).
-
 📅 16/04/2025 – Versão 6.0.0
 
 🌑 Correções no Darkmode (dentro das mensagens)</br>
