@@ -32,16 +32,7 @@ https://www.netcup.com/en/?ref=257888
 Voucher de 5 euros:
 
 ```
-36nc17424834870
-```
-```
-36nc17415489990
-```
-```
-36nc17424834870
-```
-```
-36nc17415489990
+36nc17424834870, 36nc17415489990, 36nc17424834870, 36nc17415489990
 ```
 
 📅 16/04/2025 – Versão 6.0.0
@@ -100,7 +91,7 @@ Voucher de 5 euros:
 🆕 Novo layout da página de login. </br>
 💬 Indicação “Digitando” ou “Gravando” aparece no ticket, no canto inferior direito, ao lado do nome. </br>
 
-Biblioteca Baileys Atualizada:</br>
+📚 Biblioteca Baileys Atualizada:</br>
 
 V 6.7.18
 
