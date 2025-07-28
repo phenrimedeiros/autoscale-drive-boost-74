@@ -104,6 +104,26 @@ Biblioteca Baileys Atualizada:</br>
 
 V 6.7.18
 
+Correção da versão do Whatsapp Web. Alterações feitas com usuário deploy:
+
+Editar o arquivo localizado na pasta /backend/node_modules/@whiskeysockets/baileys/lib/Defaults/baileys-version.json
+
+Alterar: 
+
+"version": [2, 3000, 1023223821]
+Para:
+
+"version": [2, 3000, 1025091846]
+
+Execute os comandos
+pm2 flush
+
+pm2 restart all
+
+pm2 log
+
+Confira no log se consta a versão atual do Whatsapp Web.
+
 Instalador atualizado, versao NodeJS 20:
 
 ```
