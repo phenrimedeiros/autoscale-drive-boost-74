@@ -43,8 +43,6 @@ Voucher de 5 euros:
 ```
 36nc17415489990
 ```
-Informações Importantes:
-Apenas Suporte Básico
 
 📅 16/04/2025 – Versão 6.0.0
 
@@ -104,7 +102,7 @@ Apenas Suporte Básico
 
 Biblioteca Baileys Atualizada:</br>
 
-V 6.7.16
+V 6.7.18
 
 Instalador atualizado, versao NodeJS 20:
 
@@ -113,9 +111,8 @@ https://github.com/launcherbr/instalador.git
 ```
 Notas Rápidas: </br>
 Requer servidor Ubuntu 20.04 LTS com ao menos 4 vcore e 8gb de ram.</br>
-Recomendamos Peramix, Contabo, e Hetzner</br>
-Não recomendamos Hostinger, Hostgator e Locaweb.</br>
-Evite latencia muito baixa e muito alta (servidor local e servidores na Europa)</br>
+Recomendamos Peramix, Netcup, Contabo, e Hetzner</br>
+Evite latencia muito baixa < 10ms e muito alta > 400ms (servidor local e servidores na Europa)</br>
 
 Siga os arquivos de Instruções para instalação, você precisa ter acesso liberado ao Google Drive:
 
