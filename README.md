@@ -125,13 +125,10 @@ Evite latencia muito baixa e muito alta (servidor local e servidores na Europa)<
 Siga os arquivos de Instruções para instalação, você precisa ter acesso liberado ao Google Drive:
 
 ```
-https://drive.google.com/drive/folders/16ZT6NnzD8kNBB18EpOYBGV4epWFJWWtZ?usp=drive_link
+Google Drive> Compartilhados Comigo > Infoprodutos > Whaticket SaaS > Instruções = SEMPRE COMECE POR AQUI
 ```
 
-Confira no pdf aqui como gerar um webhook de retorno automático de pagamento da Efi.
+Confira no arquivo pdf como gerar um webhook de retorno automático de pagamento da Efi.
 
-```
-https://drive.google.com/file/d/1Kjd-9NurK-7gw7_22-uIsZoB0MZ74YFp/view?usp=drivesdk
-```
 Personalizações:</br>
 As instruções para alteração de cores, logo, icones e nome da instalação estão nos arquivos de instruções.
