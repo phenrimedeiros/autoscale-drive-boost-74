@@ -88,7 +88,7 @@ Voucher de 5 euros:
 📜 Visualização de Grupos por Operador: Aba removida do painel de usuários. </br>
 💸 Atualização Financeira após Alteração de Plano: Valor ajustado automaticamente na lista do Financeiro. </br>
 
-24/07/2024 – Versão 5.2.6
+📅 24/07/2024 – Versão 5.2.6
 
 ✅ Fechar todos os tickets abertos ou em espera. </br>
 👍 Reagir a uma mensagem. </br>
@@ -106,21 +106,33 @@ V 6.7.18
 
 Correção da versão do Whatsapp Web. Alterações feitas com usuário deploy:
 
-Editar o arquivo localizado na pasta /backend/node_modules/@whiskeysockets/baileys/lib/Defaults/baileys-version.json
+Editar o arquivo baileys-version.json localizado na pasta /backend/node_modules/@whiskeysockets/baileys/lib/Defaults
+
+```
+su deploy
+cd
+cd whaticket
+```
+
+```
+nano /backend/node_modules/@whiskeysockets/baileys/lib/Defaults/baileys-version.son
+```
 
 Alterar: 
 
 "version": [2, 3000, 1023223821]
 Para:
-
+```
 "version": [2, 3000, 1025091846]
+```
 
-Execute os comandos
+Execute os comandos para reiniciar a aplicação
+
+```
 pm2 flush
-
 pm2 restart all
-
 pm2 log
+```
 
 Confira no log se consta a versão atual do Whatsapp Web.
 
