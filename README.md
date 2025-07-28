@@ -109,15 +109,13 @@ cd whaticket
 nano /backend/node_modules/@whiskeysockets/baileys/lib/Defaults/baileys-version.son
 ```
 
-Alterar: 
+Alterar: "version": [2, 3000, 1023223821] para:
 
-"version": [2, 3000, 1023223821]
-Para:
 ```
 "version": [2, 3000, 1025091846]
 ```
 
-Execute os comandos para reiniciar a aplicação
+Execute os comandos para reiniciar a aplicação:
 
 ```
 pm2 flush
