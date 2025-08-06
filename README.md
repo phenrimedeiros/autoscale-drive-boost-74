@@ -135,7 +135,7 @@ Requer servidor Ubuntu 20.04 LTS com ao menos 4 vcore e 8gb de ram.</br>
 Recomendamos Peramix, Netcup, Contabo, e Hetzner</br>
 Evite latencia muito baixa < 10ms e muito alta > 400ms (servidor local e servidores na Europa)</br>
 
-Siga os arquivos de Instruções para instalação, você precisa ter acesso liberado ao Google Drive:
+Siga os arquivos de Instruções para instalação, você precisa ter acesso liberado ao Google Drive:</br>
 (Acesso liberado somente adquirindo o suporte em 
 https://loja.infinitepay.io/launcher-tecnologia/aep0253-script-crm-whaticket-gold-com-saas-e-kanba
 
