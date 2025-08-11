@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* AutoScale Design System - Modern Brand Identity */
+
+@layer base {
+  :root {
+    /* Core Brand Colors - Based on Official Logo */
+    --background: 0 0% 100%;
+    --foreground: 215 25% 27%;
+    
+    /* Primary - AutoScale Blue (from logo) */
+    --primary: 215 25% 27%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 215 30% 23%;
+    
+    /* Secondary - Soft Gray for cards */
+    --secondary: 210 22% 97%;
+    --secondary-foreground: 215 20% 25%;
+    --secondary-hover: 210 25% 94%;
+    
+    /* Accent - AutoScale Orange (from logo highlight) */
+    --accent: 14 90% 53%;
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 14 85% 48%;
+    --accent-glow: 14 90% 53%;
+    
+    /* Modern Neutral Scale - Warmer tones */
+    --gray-50: 210 25% 98%;
+    --gray-100: 210 23% 95%;
+    --gray-200: 210 20% 90%;
+    --gray-300: 210 18% 82%;
+    --gray-400: 210 15% 70%;
+    --gray-500: 210 12% 55%;
+    --gray-600: 210 15% 42%;
+    --gray-700: 215 20% 32%;
+    --gray-800: 215 25% 25%;
+    --gray-900: 215 30% 18%;
+    
+    /* Support Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 220 13% 6%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    /* Surface Colors */
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 15%;
+    --muted: 210 20% 98%;
+    --muted-foreground: 210 9% 51%;
+    
+    /* Interactive */
+    --border: 210 16% 88%;
+    --input: 210 16% 88%;
+    --ring: 195 100% 56%;
+    
+    /* Layout */
+    --radius: 1rem;
+    --radius-lg: 1.5rem;
+    --radius-sm: 0.5rem;
+    
+    /* Modern Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--gray-700)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(14 85% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.05), hsl(var(--accent) / 0.05));
+    --gradient-tech: linear-gradient(135deg, hsl(var(--gray-900)), hsl(var(--primary)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--gray-50)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--background)), hsl(var(--gray-50)));
+    
+    /* Modern Elevation System */
+    --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px 0 rgb(0 0 0 / 0.06);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -1px rgb(0 0 0 / 0.06);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05);
+    --shadow-xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+    --shadow-glow: 0 0 50px hsl(var(--accent) / 0.4);
+    --shadow-accent: 0 10px 40px -10px hsl(var(--accent) / 0.5);
+    --shadow-card: 0 4px 20px 0 rgb(0 0 0 / 0.08);
+    --shadow-hero: 0 20px 60px -12px rgb(0 0 0 / 0.15);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Sidebar (for future use) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-semibold;
+  }
+}
