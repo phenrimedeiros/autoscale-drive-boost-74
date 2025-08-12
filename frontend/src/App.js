@@ -40,7 +40,7 @@ const App = () => {
                 },
                 "&::-webkit-scrollbar-thumb": {
                     boxShadow: 'inset 0 0 6px rgba(0, 0, 0, 0.3)',
-                    backgroundColor: "#2DDD7F",
+                    backgroundColor: "#344257",
 					borderRadius: "8px",
                 },
             },
@@ -56,38 +56,57 @@ const App = () => {
             },
             palette: {
                 type: mode,
-                primary: { main: mode === "light" ? "#2DDD7F" : "#FFFFFF" },
-                quicktags: { main: mode === "light" ? "#2DDD7F" : "#2DDD7F" },
-				sair: { main: mode === "light" ? "#2DDD7F" : "#333" },
-				vcard: { main: mode === "light" ? "#2DDD7F" : "#666" },
-                textPrimary: mode === "light" ? "#2DDD7F" : "#FFFFFF",
-                borderPrimary: mode === "light" ? "#2DDD7F" : "#FFFFFF",
+                // Cor principal da AutoScale (brand) – usar o azul já adotado no front
+                primary: { main: mode === "light" ? "#344257" : "#FFFFFF" },
+
+                // Itens e ícones auxiliares
+                quicktags: { main: mode === "light" ? "#344257" : "#C9C9C9" },
+                sair: { main: mode === "light" ? "#344257" : "#EAEAEA" },
+                vcard: { main: mode === "light" ? "#344257" : "#EAEAEA" },
+
+                // Texto e borda primários
+                textPrimary: mode === "light" ? "#344257" : "#FFFFFF",
+                borderPrimary: mode === "light" ? "#C9C9C9" : "#666",
+
+                // Tons claros/escuros
                 dark: { main: mode === "light" ? "#333333" : "#F3F3F3" },
                 light: { main: mode === "light" ? "#F3F3F3" : "#333333" },
-                tabHeaderBackground: mode === "light" ? "#EEE" : "#666",
-                ticketlist: mode === "light" ? "#fafafa" : "#333",
-                optionsBackground: mode === "light" ? "#fafafa" : "#333",
-				options: mode === "light" ? "#fafafa" : "#666",
-				fontecor: mode === "light" ? "#128c7e" : "#fff",
-                fancyBackground: mode === "light" ? "#fafafa" : "#333",
-				bordabox: mode === "light" ? "#eee" : "#333",
-				newmessagebox: mode === "light" ? "#eee" : "#333",
-				inputdigita: mode === "light" ? "#fff" : "#666",
-				contactdrawer: mode === "light" ? "#fff" : "#666",
-				announcements: mode === "light" ? "#ededed" : "#333",
-				login: mode === "light" ? "#fff" : "#1C1C1C",
-				announcementspopover: mode === "light" ? "#fff" : "#666",
-				chatlist: mode === "light" ? "#eee" : "#666",
-				boxlist: mode === "light" ? "#ededed" : "#666",
-				boxchatlist: mode === "light" ? "#ededed" : "#333",
-                total: mode === "light" ? "#fff" : "#222",
-                messageIcons: mode === "light" ? "grey" : "#F3F3F3",
+
+                // Backgrounds neutros (alinhados ao que já está publicado)
+                tabHeaderBackground: mode === "light" ? "#EAEAEA" : "#666",
+                ticketlist: mode === "light" ? "#FAFAFA" : "#333",
+                optionsBackground: mode === "light" ? "#FAFAFA" : "#333",
+                options: mode === "light" ? "#FAFAFA" : "#666",
+                fontecor: mode === "light" ? "#344257" : "#FFFFFF",
+                fancyBackground: mode === "light" ? "#FAFAFA" : "#333",
+                bordabox: mode === "light" ? "#EAEAEA" : "#333",
+                newmessagebox: mode === "light" ? "#EAEAEA" : "#333",
+                inputdigita: mode === "light" ? "#FFFFFF" : "#666",
+                contactdrawer: mode === "light" ? "#FFFFFF" : "#666",
+                announcements: mode === "light" ? "#EAEAEA" : "#333",
+                login: mode === "light" ? "#FFFFFF" : "#1C1C1C",
+                announcementspopover: mode === "light" ? "#FFFFFF" : "#666",
+                chatlist: mode === "light" ? "#EAEAEA" : "#666",
+                boxlist: mode === "light" ? "#EAEAEA" : "#666",
+                boxchatlist: mode === "light" ? "#EAEAEA" : "#333",
+                total: mode === "light" ? "#FFFFFF" : "#222",
+                messageIcons: mode === "light" ? "#344257" : "#F3F3F3",
                 inputBackground: mode === "light" ? "#FFFFFF" : "#333",
-                barraSuperior: mode === "light" ? "linear-gradient(to right, #2DDD7F, #2DDD7F , #2DDD7F)" : "#666",
-				boxticket: mode === "light" ? "#EEE" : "#666",
-				campaigntab: mode === "light" ? "#ededed" : "#666",
-				mediainput: mode === "light" ? "#ededed" : "#1c1c1c",
-				contadordash: mode == "light" ? "#fff" : "#fff",
+
+                // Barra superior com a cor da marca
+                barraSuperior: mode === "light"
+                    ? "linear-gradient(to right, #344257, #344257 , #344257)"
+                    : "#666",
+
+                boxticket: mode === "light" ? "#EAEAEA" : "#666",
+                campaigntab: mode === "light" ? "#EAEAEA" : "#666",
+                mediainput: mode === "light" ? "#EAEAEA" : "#1c1c1c",
+
+                // Contador do dashboard (mantido como estava)
+                contadordash: mode == "light" ? "#fff" : "#fff",
+
+                // Erro/alerta
+                error: { main: "#dc2626" },
             },
             mode,
         },
